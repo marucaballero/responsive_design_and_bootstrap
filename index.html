@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design and Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LOREM IPSUM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item showElement">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 showElement hideElement" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Amet</a>
+              </li>
+              <li class="nav-item" id="btnOpciones">
+                <a class="nav-link" href="#">Opciones</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 hideElement" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--Título y carrusel de texto-->
+    <div class="container text-center col-md-4 my-5">
+        
+        <h2>Lorem ipsum...</h2>
+      
+      <div id="carouseltext" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <p>...fusce nulla metus, tempor eu ultrices in, pharetra eget mauris</p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p>...cras posuere nibh at suscipit accumsan</p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p>...nec consequat turpis, vel suscipit sapien</p>
+          </div>
+        </div>
+       </div>
+
+    </div>
+
+    <div class="container"> <!-- Contenedor opciones y texto-->
+
+        <div class="row">
+          <div class="col-md-12 my-2 col-lg-3 hideElement" id="opciones">
+
+                <!--Cards: Opciones-->
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Opción 1</li>
+                        <li class="list-group-item">Opción 2</li>
+                        <li class="list-group-item">Opción 3</li>
+                        <li class="list-group-item">Opción 4</li>
+                    </ul>
+                </div>
+            </div>
+    
+                <!--Texto-->
+                <div class="col-md-12 col-lg-8">
+
+                    <div class="row">
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="p-1 my-1">
+                                <p class="text">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit.
+                                    Vestibulum mollis, tortor ac congue
+                                    commodo, nisi neque bibendum elit,
+                                    quis vulputate dolor augue ut
+                                    mauris. tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">Phasellus eleifend semper tempor.
+                                    Quisque mi lorem, laoreet eu urna
+                                    sit amet, tempor volutpat est.
+                                    Vestibulum lobortis nulla vel odio
+                                    laoreet, iaculis rhoncus neque
+                                    porttitor</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">Fusce vitae enim et tellus lacinia
+                                    condimentum eu at massa. Nullam
+                                    laoreet, elit quis hendrerit maximus,
+                                    ante
+                                    sem congue lorem,
+                                    at
+                                    vestibulum felis mauris et arcu.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">Mauris mattis porttitor erat, in
+                                    pharetra risus fringilla lobortis.
+                                    Vestibulum et ante commodo,
+                                    imperdiet neque ac, tempus felis.
+                                    Nullam sed pharetra purus. Donec
+                                    sit amet ultricies nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">In mi velit, fringilla sed velit vel,
+                                    ornare varius dui. Nunc viverra diam
+                                    sit amet mollis posuere. Nullam
+                                    semper odio in consectetur ornare.</p>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">Proin suscipit orci mi, ut hendrerit mi
+                                    molestie nec. Donec efficitur risus
+                                    erat, eu auctor massa molestie vitae.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">Orci varius natoque penatibus et
+                                    magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec lectus
+                                    ligula, ultricies ut est nec, varius</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 my-2 col-lg-4 bg-light text-dark">
+                            <div class="my-1">
+                                <p class="text">In aliquet fringilla libero, quis
+                                    dapibus massa tincidunt a. Orc
+                                    varius natoque penatibus et magnis
+                                    dis parturient montes, nascetur</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+        
+
+    </div>
+
+<script>
+  
+   // Mostrar la card de opciones fuera de la navbar
+   document.addEventListener("DOMContentLoaded", () => {
+                const btnOpciones = document.getElementById("btnOpciones");
+                const opciones = document.getElementById("opciones");
+
+                btnOpciones.addEventListener("click", () => {
+                    if (opciones.classList.contains("hideElement")) {
+                        opciones.classList.remove("hideElement");
+                    } else {
+                        opciones.classList.add("hideElement");
+                    }
+                })
+            })
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

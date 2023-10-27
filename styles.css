@@ -1,0 +1,45 @@
+.nav-link {
+    margin-right: 80px;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 0;
+}
+
+.text {
+    text-align: justify;
+}
+
+.list-group-item {
+    padding: 20px;
+    text-decoration-line: underline;
+}
+
+.showElement{
+    display: none;
+    margin-top: 5px;
+
+}
+#btnOpciones{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .hideElement {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .showElement {
+        display: inline;
+    }
+    #btnOpciones {
+        display: inline;
+    }
+}
+
+
+
+
